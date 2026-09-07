@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260904-05-c4a2e96","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/9e99ecf74af2a081.telemetry_sdk.js" integrity="sha512-tZ7fmfTx2KpCLjXQnEuL9azQ4A5+7+xumsx6r/WYVD0zCP/8LP8hDeCypMQesmP+WyAew4g7l5Ah23Bjd6yoVg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okoh Divine | Web Designer &amp; Developer</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f19; --surface: #151d30; --surface-2: #1b2740; --text: #f8fafc;
+      --muted: #94a3b8; --accent: #38bdf8; --accent-2: #818cf8; --line: rgba(255,255,255,.09);
+      --header: rgba(11,15,25,.82); --shadow: rgba(0,0,0,.32);
+    }
+    body.light {
+      --bg: #eef6ff; --surface: #ffffff; --surface-2: #e4f1ff; --text: #10233d;
+      --muted: #52657d; --line: rgba(15,47,82,.12); --header: rgba(238,246,255,.84); --shadow: rgba(23,53,87,.12);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; width:100%; background:var(--bg); color:var(--text); font-family:"Plus Jakarta Sans",sans-serif; line-height:1.6; overflow-x:hidden; transition:background .35s,color .35s; }
+    a { color:inherit; }
+    button,input,select,textarea { font:inherit; }
+    button { cursor:pointer; }
+    :focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .shell { width:100%; position:relative; overflow:hidden; }
+    .site-header { position:sticky; top:0; z-index:100; height:76px; padding:0 7%; display:flex; align-items:center; justify-content:space-between; background:var(--header); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
+    .logo { font-size:1.55rem; font-weight:800; letter-spacing:-.07em; color:var(--accent); text-decoration:none; }
+    .nav-wrap { display:flex; align-items:center; gap:1rem; }
+    .main-nav { display:flex; gap:1.55rem; align-items:center; }
+    .nav-link { position:relative; color:var(--muted); text-decoration:none; font-size:.88rem; font-weight:700; padding:.5rem 0; transition:color .2s; }
+    .nav-link::after { content:""; position:absolute; left:0; bottom:0; width:100%; height:2px; background:var(--accent); transform:scaleX(0); transition:transform .2s; transform-origin:left; }
+    .nav-link:hover,.nav-link.active { color:var(--text); }
+    .nav-link.active::after { transform:scaleX(1); }
+    .icon-btn { width:39px; height:39px; border:1px solid var(--line); border-radius:50%; display:grid; place-items:center; background:transparent; color:var(--text); transition:.2s; }
+    .icon-btn:hover { border-color:var(--accent); color:var(--accent); background:rgba(56,189,248,.08); }
+    .menu-btn { display:none; }
+    .hero { min-height:calc(82 * min(var(--vh, 1vh), 1vh)); padding:5.5rem 8% 3.2rem; display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:3rem; position:relative; isolation:isolate; }
+    .orb { position:absolute; z-index:-1; border-radius:50%; filter:blur(2px); opacity:.38; animation:drift 12s ease-in-out infinite alternate; pointer-events:none; }
+    .orb-one { width:24rem; height:24rem; background:radial-gradient(circle,#0ea5e9 0%,transparent 68%); top:-7rem; left:-7rem; }
+    .orb-two { width:19rem; height:19rem; background:radial-gradient(circle,#6366f1 0%,transparent 68%); right:7%; bottom:2rem; animation-delay:-4s; }
+    .eyebrow { display:inline-flex; padding:.38rem .85rem; border:1px solid rgba(56,189,248,.35); background:rgba(56,189,248,.09); border-radius:999px; color:var(--accent); font-size:.78rem; font-weight:700; }
+    .hero-greeting { margin:1.25rem 0 .1rem; font-size:1.1rem; font-weight:700; }
+    .hero h1 { margin:0; font-size:clamp(3rem,7vw,5.7rem); line-height:.98; letter-spacing:-.075em; max-width:700px; }
+    .hero-role { margin:.9rem 0 1.15rem; color:var(--accent); font-size:clamp(1.18rem,2.2vw,1.6rem); font-weight:700; }
+    .hero-description { color:var(--muted); max-width:650px; font-size:1.02rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.8rem; }
+    .btn { min-height:47px; padding:.75rem 1.1rem; border:none; border-radius:.75rem; display:inline-flex; justify-content:center; align-items:center; gap:.5rem; text-decoration:none; font-size:.88rem; font-weight:800; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; box-shadow:0 12px 25px rgba(56,189,248,.18); transition:transform .2s,box-shadow .2s; }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 17px 28px rgba(56,189,248,.3); }
+    .btn-secondary { background:transparent; color:var(--text); border:1px solid var(--line); box-shadow:none; }
+    .btn-secondary:hover { border-color:var(--accent); background:rgba(56,189,248,.08); }
+    .monogram-wrap { display:grid; place-items:center; position:relative; }
+    .monogram { width:min(31vw,340px); min-width:245px; aspect-ratio:1; border-radius:50%; display:grid; place-items:center; background:linear-gradient(135deg,#172554,#0f172a); border:4px solid rgba(56,189,248,.52); box-shadow:0 25px 60px var(--shadow),inset 0 0 55px rgba(56,189,248,.11); color:#fff; font-size:clamp(5.3rem,11vw,7.8rem); letter-spacing:-.16em; font-weight:800; padding-right:.12em; position:relative; }
+    .monogram::before { content:""; position:absolute; inset:13px; border-radius:inherit; border:1px solid rgba(129,140,248,.32); }
+    .scroll-cue { position:absolute; bottom:1.3rem; left:8%; display:flex; align-items:center; gap:.55rem; color:var(--muted); font-size:.72rem; letter-spacing:.11em; text-transform:uppercase; text-decoration:none; font-weight:700; }
+    .scroll-cue span { width:26px; height:42px; border:1px solid var(--muted); border-radius:20px; position:relative; }
+    .scroll-cue span::after { content:""; position:absolute; width:4px; height:7px; border-radius:3px; background:var(--accent); left:10px; top:8px; animation:scrollDot 1.7s infinite; }
+    .stats { width:84%; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); overflow:hidden; }
+    .stat { padding:1.2rem 1.6rem; display:flex; gap:.75rem; align-items:center; border-right:1px solid var(--line); }
+    .stat:last-child { border:0; }
+    .stat svg { color:var(--accent); width:22px; }
+    .stat strong { display:block; font-size:.96rem; }
+    .stat span { display:block; color:var(--muted); font-size:.76rem; }
+    section { padding:6.5rem 8%; }
+    .section-heading { text-align:center; margin:0 auto 3.1rem; max-width:650px; }
+    .section-heading h2 { margin:0; font-size:clamp(2rem,4vw,2.8rem); letter-spacing:-.05em; }
+    .section-heading p { margin:.55rem 0 0; color:var(--muted); }
+    .about-grid,.skills-grid,.projects-grid { display:grid; gap:1.25rem; }
+    .about-grid { grid-template-columns:repeat(2,1fr); }
+    .skills-grid { grid-template-columns:repeat(4,1fr); }
+    .projects-grid { grid-template-columns:repeat(3,1fr); }
+    .card,.skill-card,.project-card,.contact-panel { border:1px solid var(--line); background:var(--surface); border-radius:1rem; }
+    .card { padding:2rem; }
+    .card-icon { color:var(--accent); width:48px; height:48px; display:grid; place-items:center; border-radius:.75rem; background:rgba(56,189,248,.1); margin-bottom:1.2rem; }
+    .card h3,.skill-card h3 { margin:0 0 .65rem; }
+    .card p,.skill-card p { color:var(--muted); margin:0; font-size:.92rem; }
+    .skill-card { padding:1.65rem 1rem; text-align:center; transition:transform .25s,border-color .25s; }
+    .skill-card svg { color:var(--accent); width:34px; height:34px; margin-bottom:1rem; }
+    .card,.project-card { transition:transform .25s,border-color .25s,box-shadow .25s; }
+    .card:hover,.skill-card:hover,.project-card:hover { transform:translateY(-5px); border-color:rgba(56,189,248,.55); box-shadow:0 18px 38px var(--shadow); }
+    .filters { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; align-items:center; margin:-1rem 0 1.7rem; }
+    .filter-buttons { display:flex; flex-wrap:wrap; gap:.5rem; }
+    .filter-btn { border:1px solid var(--line); border-radius:999px; background:transparent; color:var(--muted); padding:.45rem .8rem; font-weight:700; font-size:.78rem; }
+    .filter-btn.active,.filter-btn:hover { color:#fff; border-color:var(--accent); background:var(--accent); }
+    .search-wrap { position:relative; min-width:min(100%,245px); }
+    .search-wrap svg { position:absolute; left:.8rem; top:50%; transform:translateY(-50%); color:var(--muted); width:16px; }
+    .search { width:100%; color:var(--text); background:var(--surface); border:1px solid var(--line); border-radius:.65rem; padding:.64rem .75rem .64rem 2.3rem; font-size:.85rem; }
+    .project-card { padding:0; overflow:hidden; color:var(--text); text-align:left; }
+    .project-card.hidden { display:none; }
+    .project-preview { height:155px; display:grid; place-items:center; background:linear-gradient(135deg,#1e3a5f,#0e1729); color:var(--accent); position:relative; }
+    .project-preview svg { width:45px; height:45px; }
+    .project-tag { position:absolute; top:.85rem; right:.85rem; font-size:.68rem; font-weight:800; padding:.25rem .55rem; border-radius:999px; color:var(--accent); background:rgba(11,15,25,.75); border:1px solid rgba(255,255,255,.13); }
+    .project-content { padding:1.35rem; }
+    .project-content h3 { margin:0 0 .55rem; font-size:1.1rem; }
+    .project-content p { margin:0; color:var(--muted); font-size:.85rem; }
+    .tech-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin:1rem 0; }
+    .tech-tag { color:var(--accent); background:rgba(56,189,248,.09); border:1px solid rgba(56,189,248,.22); font-size:.67rem; font-weight:800; border-radius:999px; padding:.2rem .46rem; }
+    .hint { color:var(--accent); font-size:.82rem; font-weight:800; }
+    .empty-state { display:none; padding:2.2rem; text-align:center; color:var(--muted); border:1px dashed var(--line); border-radius:1rem; }
+    .contact-panel { padding:2rem; display:grid; grid-template-columns:.85fr 1.15fr; gap:2.5rem; }
+    .contact-info { display:grid; align-content:center; gap:1.2rem; }
+    .info-item { display:flex; gap:.8rem; align-items:center; }
+    .info-icon { flex:0 0 42px; height:42px; display:grid; place-items:center; border-radius:.65rem; color:var(--accent); background:rgba(56,189,248,.1); }
+    .info-text span { display:block; color:var(--muted); font-size:.72rem; }
+    .info-text strong { font-size:.91rem; }
+    .contact-message { color:var(--muted); font-size:.9rem; margin:1rem 0 0; }
+    .contact-form { border-left:1px solid var(--line); padding-left:2.5rem; }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:.9rem; }
+    .field { display:grid; gap:.35rem; }
+    .field.full { grid-column:1 / -1; }
+    label { font-size:.78rem; font-weight:800; }
+    input,select,textarea { width:100%; border:1px solid var(--line); background:transparent; border-radius:.6rem; color:var(--text); padding:.67rem .75rem; }
+    select option { color:#10233d; }
+    textarea { resize:vertical; min-height:104px; }
+    .field-error { min-height:1rem; color:#fda4af; font-size:.7rem; }
+    .form-status { display:none; margin-top:1rem; padding:.85rem; border-radius:.65rem; background:rgba(56,189,248,.1); border:1px solid rgba(56,189,248,.25); color:var(--text); font-size:.82rem; }
+    .form-status.show { display:block; }
+    .modal-overlay { position:fixed; inset:0; z-index:200; padding:1rem; display:grid; place-items:center; background:rgba(4,9,18,.78); backdrop-filter:blur(10px); opacity:0; visibility:hidden; transition:.2s; }
+    .modal-overlay.active { opacity:1; visibility:visible; }
+    .modal { width:min(100%,650px); max-height:calc(90 * min(var(--vh, 1vh), 1vh)); overflow:auto; background:var(--surface); border:1px solid var(--line); border-radius:1.1rem; padding:1.4rem; transform:translateY(14px) scale(.98); transition:.2s; }
+    .modal-overlay.active .modal { transform:none; }
+    .modal-top { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+    .modal-progress { display:flex; gap:.35rem; align-items:center; color:var(--muted); font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
+    .progress-line { display:flex; gap:3px; }
+    .progress-line i { display:block; width:18px; height:3px; background:var(--line); border-radius:3px; }
+    .progress-line i:first-child { background:var(--accent); }
+    .modal-panel { display:none; }
+    .modal-panel.active { display:block; }
+    .modal-icon { margin:1.25rem 0 .9rem; color:var(--accent); }
+    .modal-icon svg { width:42px; height:42px; }
+    .modal-title { margin:0; font-size:1.7rem; }
+    .modal-description { color:var(--muted); margin:.7rem 0 1.1rem; }
+    .modal-details { padding:1rem; background:rgba(56,189,248,.055); border:1px solid var(--line); border-radius:.8rem; }
+    .modal-details h4 { margin:0 0 .6rem; color:var(--accent); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; }
+    .modal-details ul { list-style:none; padding:0; margin:0; }
+    .modal-details li { color:var(--muted); font-size:.84rem; padding:.35rem 0 .35rem 1.1rem; position:relative; }
+    .modal-details li::before { content:""; width:5px; height:5px; position:absolute; left:0; top:.82rem; border-radius:50%; background:var(--accent); }
+    .modal-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.25rem; }
+    footer { padding:2rem 8%; border-top:1px solid var(--line); display:flex; gap:1rem; flex-wrap:wrap; justify-content:space-between; align-items:center; color:var(--muted); font-size:.78rem; }
+    .footer-nav { display:flex; gap:1rem; flex-wrap:wrap; }
+    .footer-nav a { text-decoration:none; }
+    .footer-nav a:hover { color:var(--accent); }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s ease,transform .65s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .hero-text > * { animation:enter .65s ease both; }
+    .hero-text > *:nth-child(2){animation-delay:.08s}.hero-text > *:nth-child(3){animation-delay:.15s}.hero-text > *:nth-child(4){animation-delay:.22s}.hero-text > *:nth-child(5){animation-delay:.29s}.hero-text > *:nth-child(6){animation-delay:.36s}
+    @keyframes drift { to { transform:translate(35px,25px) scale(1.12); } }
+    @keyframes scrollDot { 50% { transform:translateY(15px); opacity:.2; } }
+    @keyframes enter { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+    @media (max-width:850px) {
+      .site-header { padding:0 5%; } .menu-btn { display:grid; } .main-nav { position:fixed; z-index:90; top:76px; inset-inline:0; display:grid; gap:1rem; padding:1.5rem 7%; background:var(--bg); border-bottom:1px solid var(--line); transform:translateY(-125%); opacity:0; transition:.28s ease; }
+      .main-nav.open { transform:none; opacity:1; } .hero { grid-template-columns:1fr; text-align:center; padding:3.8rem 7% 5rem; } .hero-text { display:grid; justify-items:center; } .monogram-wrap { grid-row:1; } .scroll-cue { left:50%; transform:translateX(-50%); }
+      .about-grid,.projects-grid,.contact-panel { grid-template-columns:1fr; } .skills-grid { grid-template-columns:repeat(2,1fr); } .contact-form { border-left:0; border-top:1px solid var(--line); padding:2rem 0 0; }
+    }
+    @media (max-width:560px) {
+      section { padding:4.5rem 6%; }.nav-wrap { gap:.45rem }.stats { width:88%; grid-template-columns:1fr; }.stat { border-right:0; border-bottom:1px solid var(--line); }.stat:last-child { border-bottom:0; }.form-grid { grid-template-columns:1fr; }.field.full { grid-column:auto; }.filters { align-items:stretch; }.search-wrap { width:100%; }.monogram { min-width:215px; }.hero { min-height:auto; }.actions,.modal-actions { flex-direction:column; }.btn { width:100%; }
+    }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } .reveal { opacity:1; transform:none; } }
+  </style>
+  <script src="/_sdk/fbe2ebfd64647c54.data_sdk.js" type="text/javascript" integrity="sha512-vkTX6CfvpHc3WbjK+tFJCaDuw4ERA4aEV/e5/7+MMJPMTF4RJYCI6CAwJBT/gtDW+dba4uLSsPUgDjVDHWtgUQ=="></script>
+  <script src="/_sdk/fcb6dc01f91829ac.resizing_sdk.js" type="text/javascript" integrity="sha512-YK8JfnN705qaEaVhiL7pcVB2Rs/BbdX5yxV55Az8zT/1JanyEWTw9HqCF915m9iV1YEaoil8qsjJz03l1Kb0Ug=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(11, 15, 25);">
+  <div class="shell">
+   <header data-template-id="site-header" class="site-header canva-header" style="background: rgba(11, 15, 25, 0.82);"><a data-template-id="site-logo" class="logo canva-link" href="#top" style="color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 25px;">Divine.</a>
+    <div class="nav-wrap">
+     <nav id="nav-menu" class="main-nav" aria-label="Main navigation"><a data-template-id="nav-about" class="nav-link canva-link" href="#about" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a data-template-id="nav-skills" class="nav-link canva-link" href="#skills" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Skills</a> <a data-template-id="nav-projects" class="nav-link canva-link" href="#projects" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Projects</a> <a data-template-id="nav-contact" class="nav-link canva-link" href="#contact" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+     </nav><button data-template-id="theme-toggle" id="themeToggle" class="icon-btn canva-button" type="button" aria-label="Toggle colour theme" style="background: transparent; color: rgb(248, 250, 252);"><i data-lucide="sun"></i></button> <button id="mobile-menu" class="icon-btn menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu"><i data-lucide="menu"></i></button>
+    </div>
+   </header>
+   <main id="top">
+    <section class="hero" aria-labelledby="hero-name">
+     <div class="orb orb-one"></div>
+     <div class="orb orb-two"></div>
+     <div class="hero-text"><span data-template-id="hero-badge" class="eyebrow canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 700; font-style: normal; font-size: 16px;">Available for Projects</span>
+      <p data-template-id="hero-greeting" class="hero-greeting canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 16px;">Hello, I'm</p>
+      <h1 data-template-id="hero-name" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 32px;">Okoh Divine</h1>
+      <p data-template-id="hero-role" class="hero-role canva-text" style="color: rgb(56, 189, 248); font-weight: 700; font-style: normal; font-size: 24px;">Web Designer &amp; Developer</p>
+      <p data-template-id="hero-description" class="hero-description canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">I'm a 14-year-old developer based in Edo State, Nigeria (SS2 Student). I specialize in creating pixel-perfect, responsive, and visually modern web experiences.</p>
+      <div class="actions"><a data-template-id="hire-button" href="#contact" class="btn canva-button" style="background: linear-gradient(135deg, rgb(56, 189, 248), rgb(129, 140, 248)); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Hire Me</a> <a data-template-id="hero-whatsapp-button" href="https://wa.me/2348083411961" target="_blank" rel="noopener noreferrer" class="btn btn-secondary canva-button" style="background: transparent; color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Chat on WhatsApp</a>
+      </div>
+     </div>
+     <div class="monogram-wrap">
+      <div data-template-id="profile-monogram" class="monogram canva-text" aria-label="Okoh Divine monogram" style="background: linear-gradient(135deg, rgb(23, 37, 84), rgb(15, 23, 42)); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 118px;">OD</div>
+     </div><a data-template-id="scroll-cue" class="scroll-cue canva-link" href="#about" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Scroll to explore</a>
+    </section>
+    <section class="stats reveal" aria-label="Portfolio overview">
+     <div class="stat">
+      <i data-lucide="layers"></i>
+      <div>
+       <strong data-template-id="stat-projects-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Projects</strong><span data-template-id="stat-projects-copy" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Selected work</span>
+      </div>
+     </div>
+     <div class="stat">
+      <i data-lucide="braces"></i>
+      <div>
+       <strong data-template-id="stat-skills-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Core Skills</strong><span data-template-id="stat-skills-copy" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Web-focused toolkit</span>
+      </div>
+     </div>
+     <div class="stat">
+      <i data-lucide="smartphone"></i>
+      <div>
+       <strong data-template-id="stat-responsive-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Responsive First</strong><span data-template-id="stat-responsive-copy" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Built for every screen</span>
+      </div>
+     </div>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+     <div class="section-heading reveal">
+      <h2 data-template-id="about-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 24px;">About Me</h2>
+      <p data-template-id="about-subtitle" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Passion, creativity, and clean code.</p>
+     </div>
+     <div class="about-grid">
+      <article data-template-id="who-card" class="card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <div class="card-icon">
+        <i data-lucide="user-cog"></i>
+       </div>
+       <h3 data-template-id="who-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">Who Am I?</h3>
+       <p data-template-id="who-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">My name is Okoh Divine. I'm a dedicated young web developer passionate about bringing functional ideas to life on the internet. I aim to create sleek designs that deliver seamless user experiences across every modern device.</p>
+      </article>
+      <article data-template-id="vision-card" class="card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <div class="card-icon">
+        <i data-lucide="target"></i>
+       </div>
+       <h3 data-template-id="vision-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">My Vision</h3>
+       <p data-template-id="vision-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">My goal is to rank among Nigeria's leading software engineers. I spend my time mastering core web standards, understanding design systems, and building practical digital solutions for local and global clients.</p>
+      </article>
+     </div>
+    </section>
+    <section id="skills" aria-labelledby="skills-title">
+     <div class="section-heading reveal">
+      <h2 data-template-id="skills-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 24px;">My Core Tech</h2>
+      <p data-template-id="skills-subtitle" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Technologies I use to build scalable Web UIs.</p>
+     </div>
+     <div class="skills-grid">
+      <article data-template-id="html-skill" class="skill-card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <i data-lucide="code-2"></i>
+       <h3 data-template-id="html-skill-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">HTML5</h3>
+       <p data-template-id="html-skill-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Semantic markup structure</p>
+      </article>
+      <article data-template-id="css-skill" class="skill-card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <i data-lucide="palette"></i>
+       <h3 data-template-id="css-skill-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">CSS3</h3>
+       <p data-template-id="css-skill-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Flexbox, Grid &amp; Animations</p>
+      </article>
+      <article data-template-id="javascript-skill" class="skill-card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <i data-lucide="braces"></i>
+       <h3 data-template-id="javascript-skill-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">JavaScript</h3>
+       <p data-template-id="javascript-skill-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Dynamic DOM interaction</p>
+      </article>
+      <article data-template-id="responsive-skill" class="skill-card reveal canva-card" style="background: rgb(21, 29, 48);">
+       <i data-lucide="smartphone"></i>
+       <h3 data-template-id="responsive-skill-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">Responsive</h3>
+       <p data-template-id="responsive-skill-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Mobile-first layouts</p>
+      </article>
+     </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+     <div class="section-heading reveal">
+      <h2 data-template-id="projects-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 24px;">Featured Work</h2>
+      <p data-template-id="projects-subtitle" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Click any project to inspect technical details and features.</p>
+     </div>
+     <div class="filters reveal">
+      <div class="filter-buttons" role="group" aria-label="Filter projects"><button data-template-id="filter-all" class="filter-btn active canva-button" type="button" data-filter="all" style="background: rgb(56, 189, 248); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">All Work</button> <button data-template-id="filter-concept" class="filter-btn canva-button" type="button" data-filter="concept" style="background: transparent; color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Concept</button> <button data-template-id="filter-landing" class="filter-btn canva-button" type="button" data-filter="landing" style="background: transparent; color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Landing Page</button> <button data-template-id="filter-webapp" class="filter-btn canva-button" type="button" data-filter="webapp" style="background: transparent; color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Web App</button>
+      </div>
+      <div class="search-wrap">
+       <i data-lucide="search"></i><label class="sr-only" for="project-search">Search projects</label><input data-template-id="project-search" id="project-search" class="search canva-input" type="search" placeholder="Search projects..." style="background: rgb(21, 29, 48); color: rgb(248, 250, 252); font-weight: 400; font-style: normal; font-size: 16px;">
+      </div>
+     </div>
+     <div class="projects-grid"><button data-project="school" data-category="concept" class="project-card reveal" type="button" aria-haspopup="dialog">
+       <div class="project-preview">
+        <span data-template-id="school-tag" class="project-tag canva-tag" style="background: rgba(11, 15, 25, 0.75); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Concept</span><i data-lucide="school"></i>
+       </div>
+       <div class="project-content">
+        <h3 data-template-id="school-project-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">School Portal UI</h3>
+        <p data-template-id="school-project-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">A modern layout conceptualized for academic institutions with structured timetable and events display.</p>
+        <div class="tech-tags">
+         <span data-template-id="school-tech-one" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">HTML5</span><span data-template-id="school-tech-two" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Responsive UI</span>
+        </div><span data-template-id="school-project-link" class="hint canva-text" style="color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">View Project Details →</span>
+       </div></button> <button data-project="business" data-category="landing" class="project-card reveal" type="button" aria-haspopup="dialog">
+       <div class="project-preview">
+        <span data-template-id="business-tag" class="project-tag canva-tag" style="background: rgba(11, 15, 25, 0.75); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Landing Page</span><i data-lucide="briefcase-business"></i>
+       </div>
+       <div class="project-content">
+        <h3 data-template-id="business-project-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">Business Landing Page</h3>
+        <p data-template-id="business-project-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">A high-converting, professional landing page built with modern call-to-action sections.</p>
+        <div class="tech-tags">
+         <span data-template-id="business-tech-one" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">CSS3</span><span data-template-id="business-tech-two" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Responsive UI</span>
+        </div><span data-template-id="business-project-link" class="hint canva-text" style="color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">View Project Details →</span>
+       </div></button> <button data-project="portfolio" data-category="webapp" class="project-card reveal" type="button" aria-haspopup="dialog">
+       <div class="project-preview">
+        <span data-template-id="portfolio-tag" class="project-tag canva-tag" style="background: rgba(11, 15, 25, 0.75); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Web App</span><i data-lucide="laptop-minimal"></i>
+       </div>
+       <div class="project-content">
+        <h3 data-template-id="portfolio-project-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 19px;">Personal Portfolio</h3>
+        <p data-template-id="portfolio-project-description" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">An interactive portfolio built using pure HTML, CSS, and Vanilla JS with clean UI principles.</p>
+        <div class="tech-tags">
+         <span data-template-id="portfolio-tech-one" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">HTML5</span><span data-template-id="portfolio-tech-two" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">CSS3</span><span data-template-id="portfolio-tech-three" class="tech-tag canva-tag" style="background: rgba(56, 189, 248, 0.09); color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">JavaScript</span>
+        </div><span data-template-id="portfolio-project-link" class="hint canva-text" style="color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">View Project Details →</span>
+       </div></button>
+     </div>
+     <p data-template-id="projects-empty" id="projects-empty" class="empty-state canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">No projects match that search. Try another term or category.</p>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+     <div class="section-heading reveal">
+      <h2 data-template-id="contact-title" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 24px;">Get In Touch</h2>
+      <p data-template-id="contact-subtitle" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Let's build something awesome together.</p>
+     </div>
+     <div data-template-id="contact-panel" class="contact-panel reveal canva-panel" style="background: rgb(21, 29, 48);">
+      <div class="contact-info">
+       <div class="info-item">
+        <div class="info-icon">
+         <i data-lucide="map-pin"></i>
+        </div>
+        <div class="info-text">
+         <span data-template-id="location-label" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Location</span><strong data-template-id="location-value" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 16px;">Edo State, Nigeria</strong>
+        </div>
+       </div>
+       <div class="info-item">
+        <div class="info-icon">
+         <i data-lucide="mail"></i>
+        </div>
+        <div class="info-text">
+         <span data-template-id="email-label" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Email</span><strong data-template-id="email-value" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 16px;">okohdivine@gmail.com</strong>
+        </div>
+       </div>
+       <div class="info-item">
+        <div class="info-icon">
+         <i data-lucide="message-circle"></i>
+        </div>
+        <div class="info-text">
+         <span data-template-id="whatsapp-label" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">WhatsApp</span><strong data-template-id="whatsapp-value" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 16px;">+234 808 341 1961</strong>
+        </div>
+       </div>
+       <p data-template-id="contact-message" class="contact-message canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Whether you need a full website designed or want to collaborate on a new project, feel free to drop me a message directly!</p>
+       <div class="actions">
+        <a data-template-id="email-button" href="mailto:okohdivine@gmail.com" class="btn canva-button" style="background: linear-gradient(135deg, rgb(56, 189, 248), rgb(129, 140, 248)); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Send Email</a><a data-template-id="contact-whatsapp-button" href="https://wa.me/2348083411961" target="_blank" rel="noopener noreferrer" class="btn btn-secondary canva-button" style="background: transparent; color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">WhatsApp</a>
+       </div>
+      </div>
+      <form id="contact-form" class="contact-form" novalidate="">
+       <div class="form-grid">
+        <div class="field">
+         <label data-template-id="name-label" class="canva-text" for="contact-name" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Name</label><input id="contact-name" type="text" autocomplete="name"><span class="field-error" id="name-error"></span>
+        </div>
+        <div class="field">
+         <label data-template-id="email-form-label" class="canva-text" for="contact-email" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Email</label><input id="contact-email" type="email" autocomplete="email"><span class="field-error" id="email-error"></span>
+        </div>
+        <div class="field full">
+         <label data-template-id="type-label" class="canva-text" for="project-type" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Project Type</label><select id="project-type"><option value="">Select a project type</option><option>Website Design</option><option>Landing Page</option><option>Portfolio Website</option><option>Collaboration</option></select><span class="field-error" id="type-error"></span>
+        </div>
+        <div class="field full">
+         <label data-template-id="message-label" class="canva-text" for="contact-message-field" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Message</label><textarea id="contact-message-field"></textarea><span class="field-error" id="message-error"></span>
+        </div>
+       </div><button data-template-id="form-submit" class="btn canva-button" type="submit" style="background: linear-gradient(135deg, rgb(56, 189, 248), rgb(129, 140, 248)); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Prepare Email Enquiry</button>
+       <div id="form-status" class="form-status" aria-live="polite">
+        <span data-template-id="form-success-copy" class="canva-text" style="color: rgb(248, 250, 252); font-weight: 700; font-style: normal; font-size: 16px;">Your enquiry is ready.</span> <a data-template-id="form-mailto-link" class="canva-link" href="mailto:okohdivine@gmail.com" style="color: rgb(56, 189, 248); font-weight: 800; font-style: normal; font-size: 16px;">Open your email app to send it.</a>
+       </div>
+      </form>
+     </div>
+    </section>
+   </main>
+   <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-school-title">
+    <div class="modal">
+     <div class="modal-top">
+      <div class="modal-progress">
+       <span data-template-id="modal-progress-label" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 800; font-style: normal; font-size: 16px;">Project details</span>
+       <div class="progress-line" aria-hidden="true">
+        <i></i><i></i><i></i>
+       </div>
+      </div><button data-template-id="modal-icon-close" id="modalClose" class="icon-btn canva-button" type="button" aria-label="Close project details" style="background: transparent; color: rgb(248, 250, 252);"><i data-lucide="x"></i></button>
+     </div>
+     <article id="modal-school" class="modal-panel" aria-hidden="true">
+      <div class="modal-icon">
+       <i data-lucide="school"></i>
+      </div>
+      <h3 data-template-id="modal-school-title" id="modal-school-title" class="modal-title canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 19px;">School Portal UI</h3>
+      <p data-template-id="modal-school-description" class="modal-description canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">A complete user interface prototype designed specifically for modern primary and secondary educational institutions.</p>
+      <div class="modal-details">
+       <h4 data-template-id="modal-school-highlights-label" class="canva-text" style="color: rgb(56, 189, 248); font-weight: 700; font-style: normal; font-size: 16px;">Key Highlights</h4>
+       <ul>
+        <li data-template-id="modal-school-highlight-one" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Responsive timetable grid for desktop and mobile devices</li>
+        <li data-template-id="modal-school-highlight-two" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Dedicated announcements &amp; news feed layout</li>
+        <li data-template-id="modal-school-highlight-three" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Accessible typography and high-contrast UI components</li>
+       </ul>
+      </div>
+     </article>
+     <article id="modal-business" class="modal-panel" aria-hidden="true">
+      <div class="modal-icon">
+       <i data-lucide="briefcase-business"></i>
+      </div>
+      <h3 data-template-id="modal-business-title" id="modal-business-title" class="modal-title canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 19px;">Business Landing Page</h3>
+      <p data-template-id="modal-business-description" class="modal-description canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">A conversion-focused landing page template tailored for corporate services, small businesses, and startups.</p>
+      <div class="modal-details">
+       <h4 data-template-id="modal-business-highlights-label" class="canva-text" style="color: rgb(56, 189, 248); font-weight: 700; font-style: normal; font-size: 16px;">Key Highlights</h4>
+       <ul>
+        <li data-template-id="modal-business-highlight-one" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">High-impact hero section with distinct call-to-actions</li>
+        <li data-template-id="modal-business-highlight-two" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Interactive features grid and testimonial cards</li>
+        <li data-template-id="modal-business-highlight-three" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Fast-loading assets and lightweight clean markup</li>
+       </ul>
+      </div>
+     </article>
+     <article id="modal-portfolio" class="modal-panel" aria-hidden="true">
+      <div class="modal-icon">
+       <i data-lucide="laptop-minimal"></i>
+      </div>
+      <h3 data-template-id="modal-portfolio-title" id="modal-portfolio-title" class="modal-title canva-text" style="color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 19px;">Personal Portfolio</h3>
+      <p data-template-id="modal-portfolio-description" class="modal-description canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">A custom personal portfolio website built with zero heavy frameworks to showcase skills, experience, and projects.</p>
+      <div class="modal-details">
+       <h4 data-template-id="modal-portfolio-highlights-label" class="canva-text" style="color: rgb(56, 189, 248); font-weight: 700; font-style: normal; font-size: 16px;">Key Highlights</h4>
+       <ul>
+        <li data-template-id="modal-portfolio-highlight-one" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Built with native HTML5, CSS3, and Vanilla JavaScript</li>
+        <li data-template-id="modal-portfolio-highlight-two" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Dark mode theme with custom CSS variables &amp; animations</li>
+        <li data-template-id="modal-portfolio-highlight-three" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Integrated lightbox modal system for portfolio showcase</li>
+       </ul>
+      </div>
+     </article>
+     <div class="modal-actions">
+      <button data-template-id="modal-back-button" class="btn btn-secondary canva-button" id="modalBack" type="button" style="background: transparent; color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Back to Projects</button><a data-template-id="modal-inquiry-button" href="#contact" class="btn canva-button" id="modalContactBtn" style="background: linear-gradient(135deg, rgb(56, 189, 248), rgb(129, 140, 248)); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 16px;">Inquire About This</a><button data-template-id="modal-close-button" class="btn btn-secondary canva-button" id="modalCloseBtn" type="button" style="background: transparent; color: rgb(248, 250, 252); font-weight: 800; font-style: normal; font-size: 16px;">Close</button>
+     </div>
+    </div>
+   </div>
+   <footer data-template-id="site-footer" class="canva-footer" style="background: rgb(11, 15, 25);">
+    <p data-template-id="footer-text" class="canva-text" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Okoh Divine. Crafted with passion &amp; code.</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+     <a data-template-id="footer-about" class="canva-link" href="#about" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">About</a><a data-template-id="footer-projects" class="canva-link" href="#projects" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Projects</a><a data-template-id="footer-contact" class="canva-link" href="#contact" style="color: rgb(148, 163, 184); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+    </nav><button data-template-id="top-button" id="topBtn" class="icon-btn canva-button" type="button" aria-label="Scroll back to top" style="background: transparent; color: rgb(248, 250, 252);"><i data-lucide="arrow-up"></i></button>
+   </footer>
+  </div>
+  <script src="/_sdk/5629ea66dc55d54f.editing_sdk.js" integrity="sha512-snPYzGvgiTEMUBOb+HlCBkFeiM0IRX4hcgA78wvalhC0WnJtaX+RCbosPWtNqZsZ7sZ9NwN0oePZYa+IlMwa+w=="></script>
+  <script>
+    lucide.createIcons();
+    const navMenu = document.getElementById('nav-menu');
+    const menuButton = document.getElementById('mobile-menu');
+    const themeButton = document.getElementById('themeToggle');
+    const rootBody = document.body;
+    menuButton.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => {
+      navMenu.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    themeButton.addEventListener('click', () => {
+      const light = rootBody.classList.toggle('light');
+      themeButton.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+    });
+
+    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+    }), { threshold:.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const navLinks = [...document.querySelectorAll('.nav-link')];
+    const observedSections = [...document.querySelectorAll('main section[id]')];
+    const sectionObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+    }), { rootMargin:'-35% 0px -55% 0px', threshold:0 });
+    observedSections.forEach(section => sectionObserver.observe(section));
+
+    let activeFilter = 'all';
+    const cards = [...document.querySelectorAll('.project-card')];
+    const searchInput = document.getElementById('project-search');
+    const emptyState = document.getElementById('projects-empty');
+    function filterProjects() {
+      const term = searchInput.value.toLowerCase().trim();
+      let shown = 0;
+      cards.forEach(card => {
+        const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const matchesSearch = card.textContent.toLowerCase().includes(term);
+        const show = matchesCategory && matchesSearch;
+        card.classList.toggle('hidden', !show);
+        if (show) shown++;
+      });
+      emptyState.style.display = shown ? 'none' : 'block';
+    }
+    document.querySelectorAll('.filter-btn').forEach(button => button.addEventListener('click', () => {
+      activeFilter = button.dataset.filter;
+      document.querySelectorAll('.filter-btn').forEach(item => item.classList.toggle('active', item === button));
+      filterProjects();
+    }));
+    searchInput.addEventListener('input', filterProjects);
+
+    const overlay = document.getElementById('projectModal');
+    const panels = [...document.querySelectorAll('.modal-panel')];
+    const closeButton = document.getElementById('modalClose');
+    let lastTrigger;
+    function openModal(project, trigger) {
+      lastTrigger = trigger;
+      panels.forEach(panel => {
+        const active = panel.id === 'modal-' + project;
+        panel.classList.toggle('active', active);
+        panel.setAttribute('aria-hidden', String(!active));
+        if (active) overlay.setAttribute('aria-labelledby', panel.querySelector('.modal-title').id);
+      });
+      overlay.classList.add('active'); document.body.style.overflow = 'hidden'; closeButton.focus();
+    }
+    function closeModal() {
+      overlay.classList.remove('active'); document.body.style.overflow = '';
+      panels.forEach(panel => { panel.classList.remove('active'); panel.setAttribute('aria-hidden','true'); });
+      if (lastTrigger) lastTrigger.focus();
+    }
+    cards.forEach(card => card.addEventListener('click', () => openModal(card.dataset.project, card)));
+    [closeButton, document.getElementById('modalCloseBtn'), document.getElementById('modalBack')].forEach(button => button.addEventListener('click', closeModal));
+    document.getElementById('modalContactBtn').addEventListener('click', closeModal);
+    overlay.addEventListener('click', event => { if (event.target === overlay) closeModal(); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+      if (event.key === 'Tab' && overlay.classList.contains('active')) {
+        const focusable = [...overlay.querySelectorAll('button,a[href]')].filter(el => el.offsetParent !== null);
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    const emailLink = document.querySelector('[data-template-id="form-mailto-link"]');
+    function setError(id, message) { document.getElementById(id).textContent = message; }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const type = document.getElementById('project-type').value;
+      const message = document.getElementById('contact-message-field').value.trim();
+      let valid = true;
+      setError('name-error','');setError('email-error','');setError('type-error','');setError('message-error','');
+      if (!name) { setError('name-error','Please enter your name.'); valid=false; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('email-error','Please enter a valid email address.'); valid=false; }
+      if (!type) { setError('type-error','Please choose a project type.'); valid=false; }
+      if (!message) { setError('message-error','Please add a short message.'); valid=false; }
+      if (!valid) { status.classList.remove('show'); return; }
+      const subject = encodeURIComponent('Portfolio enquiry: ' + type);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nProject Type: ' + type + '\n\nMessage:\n' + message);
+      emailLink.href = 'mailto:okohdivine@gmail.com?subject=' + subject + '&body=' + body;
+      status.classList.add('show');
+    });
+    document.getElementById('topBtn').addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+ 
+</body></html>
